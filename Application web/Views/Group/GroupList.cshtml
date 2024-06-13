@@ -1,0 +1,248 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    var groups = ViewData["Groups"] as List<Group>;
+}
+
+<h1>Liste des groupes</h1>
+
+<p>
+    <input type="text" id="searchByCycle" placeholder="Rechercher par cycle..." />
+    <input type="text" id="searchBySection" placeholder="Rechercher par section..." />
+    <input type="text" id="searchBySubSection" placeholder="Rechercher par subSection..." />
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Cycle
+            </th>
+            <th>
+                Section (année d'étude)
+            </th>
+            <th>
+                Sous-section : FA(formation alternant) / FE(formation étudiant)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="results">
+        @foreach (var group in groups) {
+            <tr>
+                <td>
+                   @group.Id
+                </td>
+                <td>
+                   @group.Cycle
+                </td>
+                <td>
+                    @group.Section
+                </td>
+                <td>
+                    @group.SubSection
+                </td>
+                <td>
+                    <a asp-controller="Group" asp-action="GroupPage" asp-route-id="@group.Id">Détail</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+
+    var searchData = @Html.Raw(Json.Serialize(groups));
+
+    document.addEventListener('DOMContentLoaded', function() {  
+
+        var searchInput = document.getElementById('searchByCycle');
+        var resultsContainer = document.getElementById('results');
+
+        searchInput.addEventListener('input', function() {
+            var searchText = searchInput.value.toLowerCase();
+            var matchedItems = [];
+
+            for (var i = 0; i < searchData.length; i++) {
+                var item = searchData[i].cycle;
+                var cycle = item.toLowerCase();
+                if (cycle.includes(searchText)) {
+                    matchedItems.push(searchData[i]);
+                }
+            }
+
+            displayResults(matchedItems);
+        });
+
+        function displayResults(items) {
+            resultsContainer.innerHTML = '';
+            if (items.length === 0) {
+                resultsContainer.innerHTML = '<tr>Aucun résultat trouvé</tr>';
+            } else {
+                items.forEach(function(item) {
+
+                    var conteneur = document.createElement('tr');
+
+                    var id = document.createElement('td');
+                    id.textContent = item.id;
+
+                    var cycle = document.createElement('td');
+                    cycle.textContent = item.cycle;
+
+                    var section = document.createElement('td');
+                    section.textContent = item.section;
+
+                    var subSection = document.createElement('td');
+                    subSection.textContent = item.subSection;
+
+
+                    var lien = document.createElement('a');
+                    lien.setAttribute("data-controller", "Group");
+                    lien.setAttribute("data-action", "GroupPage");
+                    lien.setAttribute("data-id", item.id);
+                    var url = "/" + lien.getAttribute("data-controller") + "/" + lien.getAttribute("data-action") + "/" + lien.getAttribute("data-id");
+                    lien.href = url;
+                    lien.textContent = "Détails";
+
+                    var details = document.createElement('td');
+                    details.appendChild(lien);
+
+                    conteneur.appendChild(id);
+                    conteneur.appendChild(cycle);
+                    conteneur.appendChild(section);
+                    conteneur.appendChild(subSection);
+                    conteneur.appendChild(details);
+
+                    resultsContainer.appendChild(conteneur);
+                });
+            }
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {  
+        var searchInput = document.getElementById('searchBySection');
+        var resultsContainer = document.getElementById('results');
+
+        searchInput.addEventListener('input', function() {
+            var searchText = searchInput.value.toLowerCase();
+            var matchedItems = [];
+
+            for (var i = 0; i < searchData.length; i++) {
+                var item = searchData[i].section;
+                var section = item.toLowerCase();
+                if (section.includes(searchText)) {
+                    matchedItems.push(searchData[i]);
+                }
+            }
+            displayResults(matchedItems);
+        });
+
+        function displayResults(items) {
+            resultsContainer.innerHTML = '';
+            if (items.length === 0) {
+                resultsContainer.innerHTML = '<tr>Aucun résultat trouvé</tr>';
+            } else {
+                items.forEach(function(item) {
+
+                    var conteneur = document.createElement('tr');
+
+                    var id = document.createElement('td');
+                    id.textContent = item.id;
+
+                    var cycle = document.createElement('td');
+                    cycle.textContent = item.cycle;
+
+                    var section = document.createElement('td');
+                    section.textContent = item.section;
+
+                    var subSection = document.createElement('td');
+                    subSection.textContent = item.subSection;
+
+                    var lien = document.createElement('a');
+                    lien.setAttribute("data-controller", "Group");
+                    lien.setAttribute("data-action", "GroupPage");
+                    lien.setAttribute("data-id", item.id);
+                    var url = "/" + lien.getAttribute("data-controller") + "/" + lien.getAttribute("data-action") + "/" + lien.getAttribute("data-id");
+                    lien.href = url;
+                    lien.textContent = "Détails";
+
+                    var details = document.createElement('td');
+                    details.appendChild(lien);
+
+                    conteneur.appendChild(id);
+                    conteneur.appendChild(cycle);
+                    conteneur.appendChild(section);
+                    conteneur.appendChild(subSection);
+                    conteneur.appendChild(details);
+
+                    resultsContainer.appendChild(conteneur);
+
+                });
+            }
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {  
+        var searchInput = document.getElementById('searchBySubSection');
+        var resultsContainer = document.getElementById('results');
+
+        searchInput.addEventListener('input', function() {
+            var searchText = searchInput.value.toLowerCase();
+            var matchedItems = [];
+
+            for (var i = 0; i < searchData.length; i++) {
+                var item = searchData[i].subSection;
+                var section = item.toLowerCase();
+                if (section.includes(searchText)) {
+                    matchedItems.push(searchData[i]);
+                }
+            }
+            displayResults(matchedItems);
+        });
+
+        function displayResults(items) {
+            resultsContainer.innerHTML = '';
+            if (items.length === 0) {
+                resultsContainer.innerHTML = '<tr>Aucun résultat trouvé</tr>';
+            } else {
+                items.forEach(function(item) {
+
+                    var conteneur = document.createElement('tr');
+
+                    var id = document.createElement('td');
+                    id.textContent = item.id;
+
+                    var cycle = document.createElement('td');
+                    cycle.textContent = item.cycle;
+
+                    var section = document.createElement('td');
+                    section.textContent = item.section;
+
+                    var subSection = document.createElement('td');
+                    subSection.textContent = item.subSection;
+
+                    var lien = document.createElement('a');
+                    lien.setAttribute("data-controller", "Group");
+                    lien.setAttribute("data-action", "GroupPage");
+                    lien.setAttribute("data-id", item.id);
+                    var url = "/" + lien.getAttribute("data-controller") + "/" + lien.getAttribute("data-action") + "/" + lien.getAttribute("data-id");
+                    lien.href = url;
+                    lien.textContent = "Détails";
+
+                    var details = document.createElement('td');
+                    details.appendChild(lien);
+
+                    conteneur.appendChild(id);
+                    conteneur.appendChild(cycle);
+                    conteneur.appendChild(section);
+                    conteneur.appendChild(subSection);
+                    conteneur.appendChild(details);
+
+                    resultsContainer.appendChild(conteneur);
+                });
+            }
+        }
+    });
+</script>

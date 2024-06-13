@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Page élève";
+    var group = ViewData["Group"] as Group;
+    var students = ViewData["Students"] as List<Student>;
+}
+
+<h1>Page groupe</h1>
+
+<ul>
+    <li>Cycle d'étude : @group.Cycle</li>
+    <li>Section (année d'étude): I1, I2, I3, ERIS1, ERIS2, MS2D1, ... : @group.Section</li>
+    <li>Sous-section : FA(formation alternant) / FE(formation étudiant) : @group.SubSection</li>
+    <li>Eleves du groupe :
+        <ul>
+            @{
+                @foreach (var student in students) {
+                  <li> @student.Name  @student.Firstname</li>
+                }
+            }
+        </ul>
+    </li>
+        
+</ul>

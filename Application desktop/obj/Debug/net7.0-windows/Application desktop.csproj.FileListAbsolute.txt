@@ -1,0 +1,40 @@
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Application desktop.exe
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Application desktop.deps.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Application desktop.runtimeconfig.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Application desktop.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Application desktop.pdb
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.csproj.AssemblyReference.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.AssemblyInfoInputs.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.AssemblyInfo.cs
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.csproj.CoreCompileInputs.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\refint\Application desktop.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.pdb
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.genruntimeconfig.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\ref\Application desktop.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.csproj.GenerateResource.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application desktop.csproj.CopyComplete
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application_desktop.AddStudent.resources
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application_desktop.Login.resources
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application_desktop.Home.resources
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application_desktop.AddGroupForm.resources
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application_desktop.GroupList.resources
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application desktop\obj\Debug\net7.0-windows\Application_desktop.StudentList.resources

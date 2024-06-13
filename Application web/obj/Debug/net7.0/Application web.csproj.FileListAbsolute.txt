@@ -1,0 +1,33 @@
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\appsettings.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\Application web.staticwebassets.runtime.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\Application web.exe
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\Application web.deps.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\Application web.runtimeconfig.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\Application web.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\Application web.pdb
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.csproj.AssemblyReference.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.AssemblyInfoInputs.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.AssemblyInfo.cs
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.csproj.CoreCompileInputs.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.RazorAssemblyInfo.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.RazorAssemblyInfo.cs
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\staticwebassets\msbuild.Application web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\staticwebassets\msbuild.build.Application web.props
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Application web.props
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Application web.props
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\scopedcss\bundle\Application web.styles.css
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\scopedcss\projectbundle\Application web.bundle.scp.css
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\refint\Application web.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.pdb
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.genruntimeconfig.cache
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\ref\Application web.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Jgoss\OneDrive\Documents\Workspace\C#\PR3 - Plateforme Applicative\Application web\obj\Debug\net7.0\Application web.csproj.CopyComplete

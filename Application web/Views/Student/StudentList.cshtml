@@ -1,0 +1,205 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    var students = ViewData["Students"] as List<Student>;
+    var groups = ViewData["Groups"] as List<Group>;
+
+    Console.WriteLine("nb" + groups.Count);
+    for (int i = 0; i < groups.Count; i++){
+        Console.WriteLine("groups" + groups[i].Cycle);
+    }
+
+    for (int i = 0; i < students.Count; i++)
+    {
+        Console.WriteLine("student" + students[i].GroupId);
+    }
+
+    
+}
+
+<h1>Liste des étudiants</h1>
+
+<p>
+    <input type="text" id="searchByName" placeholder="Rechercher par nom..." />
+    <input type="text" id="searchByFirstname" placeholder="Rechercher par prénom..." />   
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Nom
+            </th>
+            <th>
+                Prénom
+            </th>
+            <th>
+                Groupe
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="results">
+        @foreach (var student in students)
+        {
+            <tr>
+                <td>
+                    @student.Id
+                </td>
+                <td>
+                    @student.Name
+                </td>
+                <td>
+                    @student.Firstname
+                </td>
+                <td>
+                    @if(student.GroupId != null)
+                    {
+                        <p>@groups[student.GroupId - 1].Cycle @groups[student.GroupId -1].Section @groups[student.GroupId -1].SubSection</p>
+                    }
+                    else
+                    {
+                        <p>pas de groupe</p>
+                    }
+                </td>
+                <td>
+                    <a asp-controller="Student" asp-action="StudentPage" asp-route-id="@student.Id">Détail</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+
+    var searchData = @Html.Raw(Json.Serialize(students));
+
+    document.addEventListener('DOMContentLoaded', function() {  
+
+        var searchInput = document.getElementById('searchByName');
+        var resultsContainer = document.getElementById('results');
+
+        searchInput.addEventListener('input', function() {
+            var searchText = searchInput.value.toLowerCase();
+            var matchedItems = [];
+
+            for (var i = 0; i < searchData.length; i++) {
+                var item = searchData[i].name;
+                var name = item.toLowerCase();
+                if (name.includes(searchText)) {
+                    matchedItems.push(searchData[i]);
+                }
+            }
+
+            displayResults(matchedItems);
+        });
+
+        function displayResults(items) {
+            resultsContainer.innerHTML = '';
+            if (items.length === 0) {
+                resultsContainer.innerHTML = '<tr>Aucun résultat trouvé</tr>';
+            } else {
+                items.forEach(function(item) {
+
+                    var conteneur = document.createElement('tr');
+
+                    var id = document.createElement('td');
+                    id.textContent = item.id;
+
+                    var name = document.createElement('td');
+                    name.textContent = item.name;
+
+                    var firstname = document.createElement('td');
+                    firstname.textContent = item.firstname;
+
+                    var classe = document.createElement('td');
+                    classe.textContent = item.idClass;
+
+                    var lien = document.createElement('a');
+                    lien.setAttribute("data-controller", "Student");
+                    lien.setAttribute("data-action", "StudentPage");
+                    lien.setAttribute("data-id", item.id);
+                    var url = "/" + lien.getAttribute("data-controller") + "/" + lien.getAttribute("data-action") + "/" + lien.getAttribute("data-id");
+                    lien.href = url;
+                    lien.textContent = "Détails";
+
+                    var details = document.createElement('td');
+                    details.appendChild(lien);
+
+                    conteneur.appendChild(id);
+                    conteneur.appendChild(name);
+                    conteneur.appendChild(firstname);
+                    conteneur.appendChild(classe);
+                    conteneur.appendChild(details);
+
+                    resultsContainer.appendChild(conteneur);
+                });
+            }
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {  
+        var searchInput = document.getElementById('searchByFirstname');
+        var resultsContainer = document.getElementById('results');
+
+        searchInput.addEventListener('input', function() {
+            var searchText = searchInput.value.toLowerCase();
+            var matchedItems = [];
+
+            for (var i = 0; i < searchData.length; i++) {
+                var item = searchData[i].firstname;
+                var name = item.toLowerCase();
+                if (name.includes(searchText)) {
+                    matchedItems.push(searchData[i]);
+                }
+            }
+            displayResults(matchedItems);
+        });
+
+        function displayResults(items) {
+            resultsContainer.innerHTML = '';
+            if (items.length === 0) {
+                resultsContainer.innerHTML = '<tr>Aucun résultat trouvé</tr>';
+            } else {
+                items.forEach(function(item) {
+
+                    var conteneur = document.createElement('tr');
+
+                    var id = document.createElement('td');
+                    id.textContent = item.id;
+
+                    var name = document.createElement('td');
+                    name.textContent = item.name;
+
+                    var firstname = document.createElement('td');
+                    firstname.textContent = item.firstname;
+
+                    var classe = document.createElement('td');
+                    classe.textContent = item.idClass;
+
+                    var lien = document.createElement('a');
+                    lien.setAttribute("data-controller", "Student");
+                    lien.setAttribute("data-action", "StudentPage");
+                    lien.setAttribute("data-id", item.id);
+                    var url = "/" + lien.getAttribute("data-controller") + "/" + lien.getAttribute("data-action") + "/" + lien.getAttribute("data-id");
+                    lien.href = url;
+                    lien.textContent = "Détails";
+
+                    var details = document.createElement('td');
+                    details.appendChild(lien);
+
+                    conteneur.appendChild(id);
+                    conteneur.appendChild(name);
+                    conteneur.appendChild(firstname);
+                    conteneur.appendChild(classe);
+                    conteneur.appendChild(details);
+
+                    resultsContainer.appendChild(conteneur);
+
+                });
+            }
+        }
+    });
+</script>
